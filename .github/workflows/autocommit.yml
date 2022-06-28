@@ -42,7 +42,7 @@ jobs:
           
           rand=$[$RANDOM % ${#arr[@]}]
           
-          git commit -m "${arr[$rand]}" --author="ariespan-open <houqiyao@Outlook.in>"
+          git commit -m "${arr[$rand]}" --author="ariespan-open<houqiyao@Outlook.in>"
           
       - name: GayHub Push
         uses: ad-m/github-push-action@master
