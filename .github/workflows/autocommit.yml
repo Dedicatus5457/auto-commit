@@ -25,8 +25,8 @@ jobs:
           
       - name: Commit changes
         run: |
-          git config --local user.email "admin@ariespan.cn"
-          git config --local user.name "ariespan-open"
+          git config --local user.email "github-actions@users.noreply.github.com"
+          git config --local user.name "github-actions"
           git add -A
           
           arr[0]="chore(bot): auto commit"
