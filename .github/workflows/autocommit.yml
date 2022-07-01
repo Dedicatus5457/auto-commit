@@ -17,7 +17,9 @@ jobs:
         with:
          persist-credentials: false
          fetch-depth: 0
-
+      - name: Set time zone
+        run: sudo timedatectl set-timezone 'Asia/Shanghai'
+        
       - name: Modify last update
         run: |
           d=`date '+%Y-%m-%dT%H:%M:%SZ'`
