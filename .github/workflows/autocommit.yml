@@ -45,7 +45,7 @@ jobs:
           rand=$[$RANDOM % ${#arr[@]}]
           
            git commit -m "${arr[$rand]}" --author="github-actions<41898282+github-actions[bot]@users.noreply.github.com>"
-          
+           git commit --allow-empty -m "chore(bot): auto commit"
       - name: GayHub Push
         uses: ad-m/github-push-action@master
         with:
